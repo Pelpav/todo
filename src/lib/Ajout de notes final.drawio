@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net" modified="2024-07-16T12:44:52.151Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 OPR/111.0.0.0" version="24.6.3" etag="7ytquE2LkuF8EZnj_d3_" type="github">
+  <diagram name="Page-1" id="5N-OjJI6-VIDzGguiTAZ">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Professeur" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry width="150" height="994" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Application NextJS" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="312" width="150" height="994" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="FireStore" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="742" width="150" height="994" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="64" y="485" width="764" height="352" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="[Elève trouvé]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="5">
+          <mxGeometry x="30" width="734" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="[Elève non trouvé]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="5">
+          <mxGeometry y="259" width="764" height="7" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="loop" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="54" y="283" width="784" height="564" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="[Pour chaque élève]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="8">
+          <mxGeometry x="40" width="744" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Clique sur le bouton &quot;Ajouter note&quot;" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="107" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Requête de récupération de la liste d&#39;élèves" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="611" y="159" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Liste d&#39;élèves récupérée" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="614" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Affiche la liste d&#39;élèves" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="243" y="263" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Sélectionne un élève" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="361" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Requête de récupération des informations de l&#39;élève" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="611" y="413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Informations de l&#39;élève récupérées" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="614" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Affiche les informations de l&#39;élève" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="243" y="563" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Saisie de la note pour l&#39;élève" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="615" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Enregistrement de la note dans la base de données" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="611" y="667" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="Note enregistrée avec succès" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="614" y="719" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="Affiche un message d&#39;erreur" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="243" y="817" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="Quitte l&#39;application" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="889" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
